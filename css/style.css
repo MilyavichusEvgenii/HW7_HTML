@@ -94,7 +94,7 @@ img {
   height: 634px;
   background: rgb(255, 255, 255);
   background-size: contain;
-  display: flex;
+  display: none;
   flex-direction: column;
   position: absolute;
   top: -100%;
