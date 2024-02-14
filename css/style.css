@@ -56,12 +56,6 @@ img {
   height: 100%;
 }
 
-.n__c__i__i__img1 {
-  max-width: 44px;
-  max-height: 38px;
-}
-
-
 .n__c__i__i__img2 {
   max-width: 26px;
   max-height: 27px;
@@ -69,7 +63,52 @@ img {
 
 .n__c__m__img1 {
   max-width: 32px;
-  max-height: 23px;
+  max-height: px;
+}
+
+.n__c__i__i__img1 {
+  max-width: 44px;
+  max-height: 38px;
+}
+
+.menu__btn {
+  width: 44px;
+  height: 38px;
+  position: relative;
+}
+
+.menu__btn span {
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #FFFFFF;
+  transform: translate(-60%, -60%);
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.menu__btn span:nth-of-type(2) {
+  top: calc(50% - 10px);
+}
+
+.menu__btn span:nth-of-type(3) {
+  top: calc(50% + 10px);
+}
+
+.menu__btn.active span:first-child {
+  opacity: 0;
+}
+
+.menu__btn.active span:nth-child(2) {
+  top: calc(50%);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.menu__btn.active span:nth-child(3) {
+  top: calc(50%);
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .n__c__m__img2 {
@@ -97,10 +136,18 @@ img {
   display: none;
   flex-direction: column;
   position: absolute;
-  top: -100%;
-  right: 0;
   padding: 32px 74px 32px 32px;
   gap: 20px;
+  z-index: 50;
+  top: 75px;
+  /* transform: translateY(-120%); */
+  overflow: hidden;
+}
+
+.hamburger__content.active {
+  /* transform: translateY(0); */
+  transition: all 0.3s;
+  display: flex;
   
 }
 
@@ -155,7 +202,7 @@ img {
     align-items: center;
     gap: 3%;
     padding: 0 34px 0 0;
-  position: relative;
+
 }
 
 .h__m__picture {
