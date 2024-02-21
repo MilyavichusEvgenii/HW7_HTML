@@ -8,6 +8,21 @@
         font-size: 44px;
     }
 
+    .header__main {
+        max-height: 367px;
+        height: 100%;
+    }
+
+    .h__m__picture {
+        max-height: 367px;
+        height: 100%;
+    }
+
+    .h__m__p__img {
+        max-height: 367px;
+        height: 100%;
+    }
+
     .hmcltt0__block {
         font-size: 24px;
     }
@@ -104,6 +119,7 @@
 
     .wrapper {
         min-width: 438px;
+        width: 100%;
     }
     .nav {
         padding: 0 4%;
